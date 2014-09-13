@@ -8,5 +8,8 @@
 </head>
 <body>
 		<h1> Mi aplicacion MVC</h1>
+		
+		<!-- para revisar la invocacion del monitore -->
+		<a href="monitoreo.do?tiempo=5"> Revisar monitoreo </a>
 </body>
 </html>

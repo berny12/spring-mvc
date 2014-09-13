@@ -1,7 +1,9 @@
 package com.synergyj.curso.web.controller;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 
 /*
@@ -18,4 +20,14 @@ public class ControllerHola {
 		return "hola";
 	}
 	
+	/*
+	 * hacemos una manejador para monitoreo
+	 */
+	@RequestMapping("/monitoreo")
+	public String monitoreo(@RequestParam("tiempo") int tiempo, Model model){
+		
+		//agregamo la variables a la vista por medio del modelo
+		model.addAttribute("tiempo",tiempo);
+		return "monitoreo";
+	}
 }
