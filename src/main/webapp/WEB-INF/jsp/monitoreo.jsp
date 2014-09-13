@@ -38,7 +38,7 @@
 	 *Actualiza el segundero en la pantalla y al llegar a 0 solicita la peticion al server.
 	 */
 	function waitToRefresh(){
-		updateView("resources/getMonitoreo");
+		updateView("getMonitoreo.do");
 	 	revisaTerminoProceso();
 	}
 	
